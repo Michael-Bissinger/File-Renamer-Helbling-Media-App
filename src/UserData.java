@@ -6,9 +6,9 @@ public class UserData {
     public static void main(String[] args) {
 
 
-        // Hierher soll der Code der Mainclass
+        // Put code, that is in Mainclass right now, here
 
-        // Am Ende soll die Klasse folgende Variablen zurückgeben:
+        // This class shall return the value of these variables:
         // directory_files_to_change
         // directory_for_new_files
         // location_excel_sheet
