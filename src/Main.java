@@ -21,6 +21,7 @@ public class Main {
 
         //Prompting the user which directory the file is in
 
+        // Hier die Klasse UserData aufrufen, es sollen die drei Werte der Klasse abgespeichert werden
 
 
         System.out.println("*********************** WELCOME ***********************");
