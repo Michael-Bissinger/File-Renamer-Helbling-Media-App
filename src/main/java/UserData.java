@@ -29,7 +29,7 @@ public class UserData {
         System.out.println("[Prompting] Please tell me in which directory the files are, whose names you want to change: ");
         directory_files_to_change = user_input.next();
         System.out.println("Your original directory is " + directory_files_to_change);
-        directory_files_to_change = "reset default directory for testing only."; // reseting user input
+        directory_files_to_change = "x"; // reset default directory for testing only -> Remove later
         // To test the app I want to always use the same directory, so I don't have to write it all the time.
         // Please delete for release
         System.out.println("");
@@ -50,10 +50,10 @@ public class UserData {
 
         System.out.println("******************** EXCELSHEET ********************");
         String location_excel_sheet;
-        System.out.println("[Prompting] Finally: Please tell me the location of your excel-sheet. Then I will go to work:");
+        System.out.println("[Prompting] Finally: Please tell me the exact location of your excel-sheet including the name of the sheet. Then I will go to work:");
         location_excel_sheet = user_input.next();
         System.out.println("Your excel-sheet is at " + location_excel_sheet + " I am going to work");
-        directory_for_new_files = "reset default location for testing only."; // reseting user input
+        directory_for_new_files = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Excel-sheets\\Test-sheet"; // reseting user input
         // To test the app I want to always use the same location, so I don't have to write it all the time.
         // Please delete for release
         System.out.println("");

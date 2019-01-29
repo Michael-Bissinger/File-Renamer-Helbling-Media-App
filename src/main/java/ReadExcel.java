@@ -5,11 +5,13 @@ public class ReadExcel {
 
 public String[] readthesheet (String location_excel_sheet) {
 
-    String filenames[];
+    String[] filenames;
 
     System.out.println("Test");
 
-    return filenames[];
+
+
+    return filenames;
 
 }
 
