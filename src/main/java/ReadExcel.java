@@ -1,10 +1,16 @@
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * Created by Michael on 27.01.2019.
@@ -13,33 +19,42 @@ public class ReadExcel {
 
 public String[] readthesheet (String location_excel_sheet) throws IOException {
 
-    //Opening the Excelsheet
-    FileInputStream file = new FileInputStream(new File(location_excel_sheet));
-    Workbook workbook = new XSSFWorkbook(file);
+    //Reading the excel-file
+    File excelFile = new File(location_excel_sheet);
+    FileInputStream fis = new FileInputStream(excelFile);
+    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
-    Sheet sheet = workbook.getSheetAt(0);
+    //Looking at the first sheet
+    XSSFSheet sheet = workbook.getSheetAt(0);
 
-    //Following needs work
+    //reading through the rows of the first sheet
+    Iterator<Row> rowIt = sheet.iterator();
 
-    int i = 0;
-    for (Row row : sheet) {
-        data.put(i, new ArrayList<String>());
-        for (Cell cell : row) {
-            switch (cell.getCellTypeEnum()) {
-                case STRING: ... break;
-                case NUMERIC: ... break;
-                case BOOLEAN: ... break;
-                case FORMULA: ... break;
-                default: data.get(new Integer(i)).add(" ");
-            }
+    List<String> completesheet;     // This is to save the whole excelsheet into one list
+
+    while (rowIt.hasNext()) {
+        Row row = rowIt.next();
+
+        Iterator<Cell> cellIterator = row.cellIterator();
+
+        while (cellIterator.hasNext()) {
+            Cell cell = cellIterator.next();
+            System.out.print(cell.toString() + ";");
+
+            // Here the cell gets saved to the list "completesheet"
+            completesheet = completesheet.add(cell.toString() + "; ");
         }
-        i++;
+        System.out.println();  //Creates a Tab
     }
 
+    workbook.close();
+    fis.close();
+
+    //Now the list needs to be searched for those items, that are the new names of the audios
+    
 
 
-
-
+    //Return the new names for the audios
     String[] filenames;
     return filenames;
 
