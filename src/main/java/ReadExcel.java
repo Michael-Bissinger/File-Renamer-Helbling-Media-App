@@ -41,12 +41,12 @@ public List<String> readthesheet (String location_excel_sheet) throws IOExceptio
 
         while (cellIterator.hasNext()) {
             Cell cell = cellIterator.next();
-            System.out.print(cell.toString() + "; ");
+            //System.out.print(cell.toString() + "; ");
 
             // Here the cell gets saved to the list "completesheet"
-            completesheet.add(cell.toString() + "; ");
+            completesheet.add(cell.toString()); // I removed  + ";"
         }
-        System.out.println();  //Creates a Tab
+        //System.out.println();  //Creates a Tab
     }
 
     workbook.close();
@@ -54,30 +54,35 @@ public List<String> readthesheet (String location_excel_sheet) throws IOExceptio
 
     //Now the list needs to be searched for those items, that are the new names of the audios
 
-    System.out.println("List size: " + completesheet.size());
+    System.out.println("Number of items in List: " + completesheet.size());
 
     //String[] filenames = new String[];
     List<String> filenames = new ArrayList<String>();
 
+                // For testing
+                // for (int i=0; i <completesheet.size(); i++) {
+                //
+                //    System.out.println("Number 1: " + i + ": " + completesheet.get(i));
+                //
+                //}
+
+
 
     for (int i=0; i <completesheet.size(); i++) {
-
+        //System.out.println(completesheet.get(i));
         //When it finds the items "audio"
-        if (completesheet.toString(i) = "audio") {
+        if (completesheet.get(i) == "audio") {
             // 2 columns after audio there comes the actual name of the audio
-
-            System.out.println(" " + completesheet[i+2] + " found!");
+            System.out.println("BÄM!");
+            System.out.println(" " + completesheet.get(i + 2) + " found and stored!");
 
             // Store this item in the ArrayList filenames
-            filenames.add(completesheet[i+2]);
-            filenames.add(i+2,completesheet.toString());
-
+            filenames.add(completesheet.get(i+2));
         }
-
-
 
     }
 
+    //System.out.println("Filename number one is: " + filenames.get(1));
 
     //Return the new names for the audios
 
