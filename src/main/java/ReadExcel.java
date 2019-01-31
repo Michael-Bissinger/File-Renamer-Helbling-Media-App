@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
@@ -30,7 +31,8 @@ public String[] readthesheet (String location_excel_sheet) throws IOException {
     //reading through the rows of the first sheet
     Iterator<Row> rowIt = sheet.iterator();
 
-    List<String> completesheet;     // This is to save the whole excelsheet into one list
+    List<String> completesheet = new ArrayList<String>();     // This is to save the whole excelsheet into one list
+
 
     while (rowIt.hasNext()) {
         Row row = rowIt.next();
@@ -42,7 +44,7 @@ public String[] readthesheet (String location_excel_sheet) throws IOException {
             System.out.print(cell.toString() + ";");
 
             // Here the cell gets saved to the list "completesheet"
-            completesheet = completesheet.add(cell.toString() + "; ");
+            completesheet.add(cell.toString() + "; ");
         }
         System.out.println();  //Creates a Tab
     }
@@ -51,11 +53,11 @@ public String[] readthesheet (String location_excel_sheet) throws IOException {
     fis.close();
 
     //Now the list needs to be searched for those items, that are the new names of the audios
-    
+
 
 
     //Return the new names for the audios
-    String[] filenames;
+    String[] filenames = new String[2];
     return filenames;
 
 }

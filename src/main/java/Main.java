@@ -1,3 +1,4 @@
+import java.io.IOException;
 
 public class Main {
 
@@ -12,14 +13,6 @@ public class Main {
         //    -> changes the first file it finds in a certain directory to it
         //    -> Repeats until there is no more text
 
-        // Prerequisites:
-        // There must be a fully filled Excelsheet
-        //       -> without blank columns (Programm will stop if it finds any)
-
-        //Prompting the user which directory the file is in
-
-        // The class UserData is called here
-        // Save the 3 variables, that the class gives back, here please
 
 
         String userdata[] = new UserData().getdata();
@@ -29,10 +22,12 @@ public class Main {
 
         System.out.println("*********************** START ***********************");
 
-        // Here every necesarry column from the excel-sheets are read and put into an Array
-        // To do this the class needs to know the location of the excel-sheet saved in "location_excel_sheet"
-        String filenames[] = ReadExcel(location_excel_sheet);
-
+        // Here I want to get the new names of the audio-tracks from the Excel-sheet and save them in the Array filenames
+        try {
+            String filenames[] = new ReadExcel().readthesheet(location_excel_sheet);
+        } catch (IOException e) {
+            e.printStackTrace(); // neede, otherwise it won't work
+        }
 
 
     }
