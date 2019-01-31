@@ -18,7 +18,7 @@ import java.util.Vector;
  */
 public class ReadExcel {
 
-public String[] readthesheet (String location_excel_sheet) throws IOException {
+public List<String> readthesheet (String location_excel_sheet) throws IOException {
 
     //Reading the excel-file
     File excelFile = new File(location_excel_sheet);
@@ -41,7 +41,7 @@ public String[] readthesheet (String location_excel_sheet) throws IOException {
 
         while (cellIterator.hasNext()) {
             Cell cell = cellIterator.next();
-            System.out.print(cell.toString() + ";");
+            System.out.print(cell.toString() + "; ");
 
             // Here the cell gets saved to the list "completesheet"
             completesheet.add(cell.toString() + "; ");
@@ -54,10 +54,33 @@ public String[] readthesheet (String location_excel_sheet) throws IOException {
 
     //Now the list needs to be searched for those items, that are the new names of the audios
 
+    System.out.println("List size: " + completesheet.size());
+
+    //String[] filenames = new String[];
+    List<String> filenames = new ArrayList<String>();
+
+
+    for (int i=0; i <completesheet.size(); i++) {
+
+        //When it finds the items "audio"
+        if (completesheet.toString(i) = "audio") {
+            // 2 columns after audio there comes the actual name of the audio
+
+            System.out.println(" " + completesheet[i+2] + " found!");
+
+            // Store this item in the ArrayList filenames
+            filenames.add(completesheet[i+2]);
+            filenames.add(i+2,completesheet.toString());
+
+        }
+
+
+
+    }
 
 
     //Return the new names for the audios
-    String[] filenames = new String[2];
+
     return filenames;
 
 }

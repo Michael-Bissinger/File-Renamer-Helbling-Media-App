@@ -51,10 +51,10 @@ public class UserData {
         System.out.println("[Prompting] Finally: Please tell me the exact location of your excel-sheet including the name of the sheet. Then I will go to work:");
         location_excel_sheet = user_input.next();
         System.out.println("Your excel-sheet is at " + location_excel_sheet + " I am going to work");
-        directory_for_new_files = "File://C:/Users/Michael/Desktop/Michael/Programmieren/_Projekte/File Renamer Helbling Media App/resources/Excel-sheets/Test-sheet"; // reseting user input
+        location_excel_sheet = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Excel-sheets\\Test-sheet\\MediaApp_KeyboardClass_SB1.xlsx"; // reseting user input
         // To test the app I want to always use the same location, so I don't have to write it all the time.
         // Please delete for release
-        // When the user inputs data I have to change the "\" to "/" and add "File://" to the beginning
+        // After the user inputs data I have to add ".xlsx" to the end if it is not there already
         System.out.println("");
 
 

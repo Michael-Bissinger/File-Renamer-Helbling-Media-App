@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.List;
 
 public class Main {
 
@@ -24,7 +25,7 @@ public class Main {
 
         // Here I want to get the new names of the audio-tracks from the Excel-sheet and save them in the Array filenames
         try {
-            String filenames[] = new ReadExcel().readthesheet(location_excel_sheet);
+            List<String> filenames = new ReadExcel().readthesheet(location_excel_sheet);
         } catch (IOException e) {
             e.printStackTrace(); // neede, otherwise it won't work
         }
