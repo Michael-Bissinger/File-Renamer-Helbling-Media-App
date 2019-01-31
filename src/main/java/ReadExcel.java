@@ -69,21 +69,21 @@ public List<String> readthesheet (String location_excel_sheet) throws IOExceptio
 
 
     for (int i=0; i <completesheet.size(); i++) {
-        //System.out.println(completesheet.get(i));
-        //When it finds the items "audio"
-        if (completesheet.get(i) == "audio") {
-            // 2 columns after audio there comes the actual name of the audio
-            System.out.println("BÄM!");
-            System.out.println(" " + completesheet.get(i + 2) + " found and stored!");
+                        //System.out.println(completesheet.get(i));
+
+        //When it finds the element "audio" this is executed
+        if (completesheet.get(i).equals("audio") == true) {
+            // 1 columns after audio there comes the actual name of the audio
+            System.out.println("!" + completesheet.get(i + 1) + " found and stored!");
 
             // Store this item in the ArrayList filenames
-            filenames.add(completesheet.get(i+2));
+            filenames.add(completesheet.get(i + 1));
         }
 
     }
 
     //System.out.println("Filename number one is: " + filenames.get(1));
-
+    System.out.println("Number of Filenames is: " + filenames.size());
     //Return the new names for the audios
 
     return filenames;
