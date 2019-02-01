@@ -25,7 +25,7 @@ public class Main {
             e.printStackTrace(); // needed, otherwise it won't work
         }
 
-        CopyAndRenameAudios.audioFinalizing(filenames, directory_files_to_change, directory_for_new_files);
+        CopyAudios.audioFinalizing(filenames, directory_files_to_change, directory_for_new_files);
         // Why is the variable filenames not accepted?
 
 
