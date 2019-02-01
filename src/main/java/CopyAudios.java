@@ -16,7 +16,7 @@ public class CopyAudios {
 
     // 2 variables are put in, oo variable is output
 
-public static void audioFinalizing (List<String> filenames, String directory_files_to_change, String directory_for_new_files) {
+public static void audioCopying (List<String> filenames, String directory_files_to_change, String directory_for_new_files) throws IOException {
 
     System.out.println("Welcome in the final round!");
     System.out.println(filenames);
@@ -31,12 +31,31 @@ public static void audioFinalizing (List<String> filenames, String directory_fil
     // First check if the input entered by the user is correct
     if (source.isDirectory()) {
 
-        System.out.println("That is a directory. Perfect!");
+        if (!destination.exists()){
+
+            // If the destination-fodler doesn't exist just create it
+            destination.mkdir();
+            System.out.println("The folder !" + destination + "! had to be created");
+
+        }
+
+        String files[] = source.list();
+
+        for (String file : files) {
+
+            File source_File = new File(source, file);
+            File destination_File = new File(destination,file);
+
+            //Copying
+            Files.copy(source.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("File copied to: " + directory_for_new_files);
+
+        }
 
     }
     else {
 
-        System.out.println("Programm failed because the original folder " + directory_files_to_change + " is not a folder!");
+        System.out.println("Program failed because the original folder " + directory_files_to_change + " is not a folder!");
         System.out.println("Please start again and input correct data.");
         System.exit(0);
 

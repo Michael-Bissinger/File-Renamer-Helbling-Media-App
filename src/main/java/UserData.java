@@ -27,7 +27,7 @@ public class UserData {
         System.out.println("[Prompting] Please tell me in which directory the files are, whose names you want to change: ");
         directory_files_to_change = user_input.next();
         System.out.println("Your original directory is " + directory_files_to_change);
-        directory_files_to_change = "x"; // reset default directory for testing only -> Remove later
+        directory_files_to_change = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Audios\\to rename"; // reset default directory for testing only -> Remove later
         // To test the app I want to always use the same directory, so I don't have to write it all the time.
         // Please delete for release
         System.out.println("");
@@ -40,7 +40,7 @@ public class UserData {
         System.out.println("[Prompting] Please tell me now, where the new files shall be saved:");
         directory_for_new_files = user_input.next();
         System.out.println("Your future directory is " + directory_for_new_files);
-        directory_for_new_files = "reset default directory for testing only."; // reseting user input
+        directory_for_new_files = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Audios\\renamed"; // reseting user input
         // To test the app I want to always use the same directory, so I don't have to write it all the time.
         // Please delete for release
         System.out.println("");

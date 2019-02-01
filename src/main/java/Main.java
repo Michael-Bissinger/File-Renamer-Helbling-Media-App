@@ -25,7 +25,11 @@ public class Main {
             e.printStackTrace(); // needed, otherwise it won't work
         }
 
-        CopyAudios.audioFinalizing(filenames, directory_files_to_change, directory_for_new_files);
+        try {
+            CopyAudios.audioCopying(filenames, directory_files_to_change, directory_for_new_files);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         // Why is the variable filenames not accepted?
 
 
