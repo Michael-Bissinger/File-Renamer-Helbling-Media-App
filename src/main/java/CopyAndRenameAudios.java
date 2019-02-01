@@ -12,6 +12,8 @@ public static void audioFinalizing (List<String> filenames, String directory_fil
     System.out.println(directory_for_new_files);
 
 
+    // Copy the files
+
 }
 
 }

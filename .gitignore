@@ -1,4 +1,5 @@
 # Ignore the project files from IntelliJIDEA
 .idea/workspace.xml
 
-
+# No changed and renamed final files
+/resources/Audios/renamed/*
