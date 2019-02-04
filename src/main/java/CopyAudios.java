@@ -48,7 +48,7 @@ public static void audioCopying (List<String> filenames, String directory_files_
 
             //Copying
             Files.copy(source_File.toPath(), destination_File.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            System.out.println("File copied to: " + directory_for_new_files);
+            System.out.println("File " + source_File.getName() + " copied to: " + directory_for_new_files);
 
         }
 
