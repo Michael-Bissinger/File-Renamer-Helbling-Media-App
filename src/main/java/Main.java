@@ -30,8 +30,9 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // Why is the variable filenames not accepted?
 
+        // Finally the audios are gonna be renamed. That's it then!
+        RenameAudios.audiosRenaming(filenames);
 
 
     }
