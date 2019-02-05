@@ -14,7 +14,6 @@ public class Main {
         System.out.println("*********************** START ***********************");
 
         // Here I want to get the new names of the audio-tracks from the Excel-sheet and save them in the Array filenames
-
         List<String> filenames = new ArrayList<String>();
 
         try {
@@ -32,7 +31,7 @@ public class Main {
         }
 
         // Finally the audios are gonna be renamed. That's it then!
-        RenameAudios.audiosRenaming(filenames);
+        RenameAudios.audiosRenaming(filenames, directory_for_new_files);
 
 
     }
