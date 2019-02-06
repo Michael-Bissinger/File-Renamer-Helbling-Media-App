@@ -59,15 +59,6 @@ public List<String> readthesheet (String location_excel_sheet) throws IOExceptio
     //String[] filenames = new String[];
     List<String> filenames = new ArrayList<String>();
 
-                // For testing
-                // for (int i=0; i <completesheet.size(); i++) {
-                //
-                //    System.out.println("Number 1: " + i + ": " + completesheet.get(i));
-                //
-                //}
-
-
-
     for (int i=0; i <completesheet.size(); i++) {
                         //System.out.println(completesheet.get(i));
 
