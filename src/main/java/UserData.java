@@ -27,14 +27,11 @@ public class UserData {
         directory_files_to_change = user_input.next();
         System.out.println("Your original directory is " + directory_files_to_change);
 
-        if  (directory_files_to_change.equals("d") == true) {
+        if  (directory_files_to_change.equals("t") == true) {
             directory_files_to_change = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Audios\\to rename"; // reset default directory for testing only -> Remove later
             // To test the app I want to always use the same directory, so I don't have to write it all the time.
         }
 
-        directory_files_to_change = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Audios\\to rename"; // reset default directory for testing only -> Remove later
-        // To test the app I want to always use the same directory, so I don't have to write it all the time.
-        // Please delete for release
         System.out.println("");
 
 
@@ -46,7 +43,7 @@ public class UserData {
         directory_for_new_files = user_input.next();
         System.out.println("Your future directory is " + directory_for_new_files);
 
-        if (directory_for_new_files.equals("t")) {
+        if (directory_for_new_files.equals("t") == true) {
             directory_for_new_files = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Audios\\renamed"; // reseting user input
             // To test the app I want to always use the same directory, so I don't have to write it all the time.
         }
@@ -60,7 +57,7 @@ public class UserData {
         location_excel_sheet = user_input.next();
         System.out.println("Your excel-sheet is at " + location_excel_sheet + " I am going to work");
 
-        if (location_excel_sheet.equals("t")) {
+        if (location_excel_sheet.equals("t") == true) {
             location_excel_sheet = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Excel-sheets\\Test-sheet\\MediaApp_KeyboardClass_SB1.xlsx"; // reseting user input
             // To test the app I want to always use the same location, so I don't have to write it all the time.
         }
