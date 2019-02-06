@@ -16,9 +16,9 @@ public class RenameAudios {
 
             if (listOfFiles[i].isFile()) {
 
-                File f = new File(directory_for_new_files + listOfFiles[i].getName());
+                File f = new File(directory_for_new_files + "\\" + listOfFiles[i].getName());
 
-                f.renameTo(new File(directory_for_new_files + filenames.get(i)));
+                f.renameTo(new File(directory_for_new_files + "\\" + filenames.get(i)));
 
                 System.out.println("Renaming file: " + filenames.get(i));
 
