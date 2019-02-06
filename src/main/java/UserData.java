@@ -30,6 +30,7 @@ public class UserData {
         if  (directory_files_to_change.equals("t") == true) {
             directory_files_to_change = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Audios\\to rename"; // reset default directory for testing only -> Remove later
             // To test the app I want to always use the same directory, so I don't have to write it all the time.
+            System.out.println("You are using the testing directory.");
         }
 
         System.out.println("");
@@ -46,6 +47,7 @@ public class UserData {
         if (directory_for_new_files.equals("t") == true) {
             directory_for_new_files = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Audios\\renamed"; // reseting user input
             // To test the app I want to always use the same directory, so I don't have to write it all the time.
+            System.out.println("You are using the testing directory.");
         }
 
         System.out.println("");
@@ -60,6 +62,7 @@ public class UserData {
         if (location_excel_sheet.equals("t") == true) {
             location_excel_sheet = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Excel-sheets\\Test-sheet\\MediaApp_KeyboardClass_SB1.xlsx"; // reseting user input
             // To test the app I want to always use the same location, so I don't have to write it all the time.
+            System.out.println("You are using the testing Excel-sheet.");
         }
 
         // After the user inputs data I have to add ".xlsx" to the end if it is not there already
