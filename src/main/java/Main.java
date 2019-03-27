@@ -33,15 +33,21 @@ public class Main extends Application {
         grid.setPadding(new Insets(25,25,25,25));
 
 
+        // Controls
+        TextField dirfilestochange = new TextField();
+        TextField dirnewfiles = new TextField();
+        TextField locationexcel = new TextField();
 
-        final Text actiontarget = new Text();
-        grid.add(actiontarget,1,6);
+
+
+        Button btn = new Button();
+        btn.setText("Start renaming!");
 
         // Lamda expression
 //        btn.setOnAction(event ->
 //        {
-//            actiontarget.setFill(Color.FIREBRICK);
-//            actiontarget.setText("Sign in button pressed");
+//
+//
 //        });
 
 
