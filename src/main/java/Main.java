@@ -21,16 +21,8 @@ import java.util.List;
 public class Main extends Application {
 
 
-
     @Override
     public void start(Stage primaryStage) {
-
-    GridPane grid = new GridPane();
-    grid.setAlignment(Pos.CENTER);
-    //setting a gap
-        grid.setHgap(10);
-        grid.setVgap(10);
-        grid.setPadding(new Insets(25,25,25,25));
 
 
         // Controls
@@ -50,12 +42,21 @@ public class Main extends Application {
 //
 //        });
 
+        // Create and setup GridPane
+        GridPane grid = new GridPane();
+        grid.setAlignment(Pos.CENTER);
+
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(25,25,25,25));
+        
         // Add to GridPane
+
         grid.add(dirfilestochange, 0, 0, 1, 1);
         grid.add(dirnewfiles, 0, 1, 1, 1);
         grid.add(locationexcel, 0, 2, 1, 1);
         grid.add(btn,0,3,1,1);
-        
+
         Scene scene = new Scene(grid, 500, 500);
 
         //scene.getStylesheets().
