@@ -50,7 +50,12 @@ public class Main extends Application {
 //
 //        });
 
-
+        // Add to GridPane
+        grid.add(dirfilestochange, 0, 0, 1, 1);
+        grid.add(dirnewfiles, 0, 1, 1, 1);
+        grid.add(locationexcel, 0, 2, 1, 1);
+        grid.add(btn,0,3,1,1);
+        
         Scene scene = new Scene(grid, 500, 500);
 
         //scene.getStylesheets().
