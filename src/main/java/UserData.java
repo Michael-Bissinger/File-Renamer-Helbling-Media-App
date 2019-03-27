@@ -60,7 +60,7 @@ public class UserData {
         System.out.println("Your excel-sheet is at " + location_excel_sheet + " I am going to work");
 
         if (location_excel_sheet.equals("t") == true) {
-            location_excel_sheet = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Excel-sheets\\Test-sheet\\MediaApp_KeyboardClass_SB1.xlsx"; // reseting user input
+            location_excel_sheet = "C:\\Users\\Michael\\Desktop\\Michael\\Programmieren\\_Projekte\\File Renamer Helbling Media App\\resources\\Excel-sheets\\Test-sheet\\MediaApp_Keyboard Accompaniment.xlsx"; // reseting user input
             // To test the app I want to always use the same location, so I don't have to write it all the time.
             System.out.println("You are using the testing Excel-sheet.");
         }

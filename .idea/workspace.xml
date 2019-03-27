@@ -3,6 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="457b6b17-20da-4b08-9370-e647ab7df2e4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/01 Three To Get Started.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/02 Three To Get Started PB.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/03 Go Tell Aunt Rhody.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/04 Go Tell Aunt Rhody PB.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/05 Keynote Walk.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/06 Keynote Walk PB.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/07 Moldau On Four.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/08 Moldau On Four PB.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/09 Walking Dance.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Audios/to rename/10 Walking Dance PB.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserData.class" afterDir="false" />
     </list>
     <ignored path="File Renamer Helbling Media App.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UserData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+            <state relative-caret-position="132">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -88,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="347">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -107,6 +120,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>user</find>
+      <find>scen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,14 +137,15 @@
         <option value="$PROJECT_DIR$/src/main/java/CopyAudios.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReadExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/RenameAudios.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UserData.java" />
         <option value="$PROJECT_DIR$/src/main/java/HelblingFileRenamerGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UserData.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="150" />
+    <option name="x" value="187" />
+    <option name="y" value="141" />
     <option name="width" value="1615" />
     <option name="height" value="880" />
   </component>
@@ -140,6 +155,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,8 +197,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,10 +401,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="0" width="1292" height="703" extended-state="0" />
+    <frame x="-38" y="58" width="1292" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3758117" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5032467" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -398,7 +413,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48628885" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.93442625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,7 +421,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3273305" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3264151" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -477,19 +492,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UserData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        <state relative-caret-position="132">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2514#2515#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="347">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>

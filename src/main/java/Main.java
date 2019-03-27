@@ -32,33 +32,7 @@ public class Main extends Application {
         grid.setVgap(10);
         grid.setPadding(new Insets(25,25,25,25));
 
-        Scene scene = new Scene(grid, 300, 275);
 
-        // Labels and textfields
-        Text scenetitle = new Text("Please Login: ");
-        scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
-        Label userName = new Label("User Name:");
-        TextField userTextField = new TextField();
-        Label pw = new Label("Password: ");
-        PasswordField pwBox = new PasswordField();
-
-
-        // Adding the defined elements to the Grid
-        // The information behind sets the position
-        grid.add(scenetitle,0,0,2,1); //span 2 columns, span 1 row
-        grid.add(userName, 0, 1);
-        grid.add(userTextField, 1, 1);
-        grid.add(pw, 0, 2);
-        grid.add(pwBox, 1, 2);
-
-        // only for develpment. Delete in final version.
-        //grid.setGridLinesVisible(true);
-
-        Button btn = new Button("Sign in");
-        HBox hbBtn = new HBox(10);
-        hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
-        hbBtn.getChildren().add(btn);
-        grid.add(hbBtn,1,4);
 
         final Text actiontarget = new Text();
         grid.add(actiontarget,1,6);
@@ -71,9 +45,11 @@ public class Main extends Application {
 //        });
 
 
+        Scene scene = new Scene(grid, 500, 500);
+
         //scene.getStylesheets().
         //        add(GUITestProject.class.getResource("Login.css").toExternalForm());
-        primaryStage.setTitle("JavaFX Login Form!");
+        primaryStage.setTitle("File Renamer (Helbling Media App)");
         primaryStage.setScene(scene);
         primaryStage.show();
 
