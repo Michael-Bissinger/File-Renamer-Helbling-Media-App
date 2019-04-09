@@ -1,4 +1,6 @@
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -36,11 +38,15 @@ public class Main extends Application {
         btn.setText("Start renaming!");
 
         // Lamda expression
-//        btn.setOnAction(event ->
-//        {
-//
-//
-//        });
+        btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+
+                System.out.println("test!");
+
+
+            }
+        });
 
         // Create and setup GridPane
         GridPane grid = new GridPane();
