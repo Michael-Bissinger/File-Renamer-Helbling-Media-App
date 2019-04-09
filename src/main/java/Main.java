@@ -49,7 +49,7 @@ public class Main extends Application {
         grid.setHgap(10);
         grid.setVgap(10);
         grid.setPadding(new Insets(25,25,25,25));
-        
+
         // Add to GridPane
 
         grid.add(dirfilestochange, 0, 0, 1, 1);
