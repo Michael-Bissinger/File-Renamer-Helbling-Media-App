@@ -6,7 +6,6 @@ public class Action {
 
     public static void start (String directory_files_to_change_gui, String directory_for_new_files_gui, String location_excel_sheet_gui){
 
-
         // Old way of getting userdata
         String userdata[] = new UserData().getdata();
         String directory_files_to_change = userdata[0];
@@ -15,9 +14,9 @@ public class Action {
 
         //New way of getting userdata (through GUI)
         //userdata[] = new UserData().getdata();
-        //directory_files_to_change = userdata[0];
-        //directory_for_new_files = userdata[1];
-        //location_excel_sheet = userdata [2];
+        directory_files_to_change = userdata[0];
+        directory_for_new_files = userdata[1];
+        location_excel_sheet = userdata [2];
 
         System.out.println("*********************** START ***********************");
 
