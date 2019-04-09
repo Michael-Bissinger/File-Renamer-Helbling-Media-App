@@ -28,25 +28,15 @@ public class Main extends Application {
 
 
         // Controls
-        TextField dirfilestochange = new TextField();
-        TextField dirnewfiles = new TextField();
-        TextField locationexcel = new TextField();
+        final TextField dirfilestochange = new TextField();
+        final TextField dirnewfiles = new TextField();
+        final TextField locationexcel = new TextField();
 
 
 
         Button btn = new Button();
         btn.setText("Start renaming!");
 
-        // Lamda expression
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-
-                System.out.println("test!");
-
-
-            }
-        });
 
         // Create and setup GridPane
         GridPane grid = new GridPane();
@@ -71,6 +61,17 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
+
+        // Start programm
+        btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String directory_files_to_change_gui = dirfilestochange.getText();
+                String directory_for_new_files_gui = dirnewfiles.getText();
+                String location_excel_sheet_gui = locationexcel.getText();
+                Action.start(directory_files_to_change_gui, directory_for_new_files_gui, location_excel_sheet_gui);
+            }
+        });
 
 
 
